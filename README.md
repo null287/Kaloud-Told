@@ -37,7 +37,7 @@
 ## 📦 安装
 
 ```
-/plugin marketplace add <你的GitHub用户名>/kaloud-told
+/plugin marketplace add null287/Kaloud-Told
 /plugin install kaloud-told@kaloud-told
 ```
 
