@@ -1,0 +1,7 @@
+{
+  "name": "kaloud-told",
+  "description": "唯一带「自动撤回」的 Windows Claude Code 桌面通知插件。柯唠叨 —— 会唠叨提醒你的 Claude 通知小助手。",
+  "author": { "name": "Ke Xinghan (柯星瀚)" },
+  "license": "MIT",
+  "keywords": ["claude-code", "notification", "toast", "windows", "auto-dismiss", "powershell", "hooks"]
+}

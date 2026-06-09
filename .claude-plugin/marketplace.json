@@ -1,0 +1,15 @@
+{
+  "name": "kaloud-told",
+  "owner": { "name": "Ke Xinghan (柯星瀚)" },
+  "metadata": {
+    "description": "Kaloud Told（柯唠叨）—— 唯一带自动撤回的 Windows Claude Code 桌面通知插件"
+  },
+  "plugins": [
+    {
+      "name": "kaloud-told",
+      "source": "./",
+      "description": "唯一带「自动撤回」的 Windows Claude Code 桌面通知插件；做完决定通知自己消失",
+      "category": "productivity"
+    }
+  ]
+}
