@@ -1,53 +1,54 @@
-# Kaloud Told（柯唠叨）
+# Kaloud Told (柯唠叨)
 
-> 唯一带「自动撤回」的 Windows Claude Code 桌面通知插件。
+**English** | [中文](README.zh.md)
+
 > The only Windows toast-notification plugin for Claude Code that **auto-dismisses** itself.
 
-一个会"唠叨"提醒你的 Claude 通知小助手——做完决定，通知自己消失，不留堆积。
+A notification helper that "nags" you — once you make a decision, the notification clears itself. No clutter left behind.
 
-## ✨ 为什么是它（差异化）
+## ✨ Why Kaloud Told
 
-- 🎯 **独家「自动撤回」**：你按完 Yes/No、回答完问题、或一轮跑完后，通知会**自动消失**，不用手动清（目前全赛道独此一家）
-- 🪶 **轻量零依赖**：纯 PowerShell + Windows 原生 WinRT，不装任何额外运行时
-- 🪟 **Windows 一等公民**：专为 Windows 打造，不是跨平台工具的附属
-- 🖱️ **点击跳转**：点通知跳回你正在工作的 VS Code 窗口
+- 🎯 **Exclusive auto-dismiss**: After you hit Yes/No, answer a question, or a turn finishes, the notification **disappears on its own** — no manual cleanup. (Currently the only plugin doing this.)
+- 🪶 **Lightweight, zero-dependency**: Pure PowerShell + native Windows WinRT. No extra runtime to install.
+- 🪟 **Windows first-class**: Built for Windows, not a cross-platform afterthought.
+- 🖱️ **Click to jump back**: Click the notification to jump back to your VS Code window.
 
-## 🔔 支持的通知
+## 🔔 Notification Types
 
-| 通知 | 何时触发 |
+| Notification | Triggers when |
 |---|---|
-| 🔐 需要授权 | 工具要你批准时（显示具体工具名）|
-| ✅ 任务完成 | 一轮对话跑完 |
-| ❓ 有问题 | Claude 用 AskUserQuestion 问你时 |
-| 📋 计划就绪 | plan mode 提交计划、等你批准时 |
-| ⏱️ 会话限制 | 撞到用量上限 |
-| 🔴 API 错误 | API 报错（细分：登录失效 / 限流 / 服务器 / 连接）|
+| 🔐 Permission needed | A tool needs your approval (shows the tool name) |
+| ✅ Task done | A turn finishes |
+| ❓ Question | Claude asks you via AskUserQuestion |
+| 📋 Plan ready | plan mode submits a plan for approval |
+| ⏱️ Session limit | You hit the usage limit |
+| 🔴 API error | An API error occurs (login expired / rate limit / server / connection) |
 
-**全部通知都带「自动撤回」。**
+**All of them auto-dismiss.**
 
-## 💻 环境要求
+## 💻 Requirements
 
-- **Windows 10 (1709+) 或 Windows 11**
-- **PowerShell 5.1**（Windows 自带，无需安装）
-- **FullLanguage 模式**（普通家用电脑默认就是；若企业 AppLocker/WDAC 把 PowerShell 锁成 ConstrainedLanguage，则弹不出通知）
-- 在 VS Code 集成终端 / Windows Terminal / Claude 桌面 App 里跑 Claude Code 都支持
+- **Windows 10 (1709+) or Windows 11**
+- **PowerShell 5.1** (built into Windows, nothing to install)
+- **FullLanguage mode** (the default on normal PCs; if AppLocker/WDAC locks PowerShell into ConstrainedLanguage, notifications won't fire)
+- Works whether you run Claude Code in VS Code's integrated terminal, Windows Terminal, or the Claude desktop app
 
-> ⚠️ 开发与测试于 Windows 11，尚未在多台机器验证。遇到问题欢迎提 issue 反馈。
+> ⚠️ Developed and tested on Windows 11; not yet tested across multiple machines. Issues / feedback welcome.
 
-## 📦 安装
+## 📦 Install
 
 ```
 /plugin marketplace add null287/Kaloud-Told
 /plugin install kaloud-told@kaloud-told
 ```
 
-## 🏷️ 名字由来
+## 🏷️ About the Name
 
-**Kaloud Told / 柯唠叨**——作者姓"柯"(K)，把 Claude 拟人成一个会"唠叨提醒你"的小助手：
+**Kaloud Told / 柯唠叨** — the author's surname is "Ke" (K), personifying Claude as a little helper that "nags" you:
 
-- 中文「柯唠叨」= 柯（姓）+ 唠叨（通知的本质，就是唠叨提醒你一声）+ 给 Claude 起的中文名
-- 英文 `Kaloud Told` = K(柯) + aloud(出声) + Told(告知)，整体谐音 Claude
-- 中英双关：柯 = K、唠叨 = aloud told
+- Chinese 「柯唠叨」 = Ke (surname) + 唠叨 (*nagging* — the essence of a notification) + a Chinese nickname for Claude
+- English `Kaloud Told` = K (Ke) + *aloud* + *Told*, which sounds like "Claude"
+- A bilingual pun: Ke = K, 唠叨 = aloud told
 
 ## 📄 License
 
